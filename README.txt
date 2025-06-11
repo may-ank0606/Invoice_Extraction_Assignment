@@ -1,59 +1,67 @@
+# Invoice Data Extraction
 
-# 🧾 Invoice Data Extraction
+**Author:** Mayank Arya
 
-**Submitted by:** Mayank Arya
+## Overview
 
----
+This project provides an automated solution for extracting structured data from PDF invoices and converting it into Excel format. The system currently supports Amazon and Flipkart invoice formats and can be easily extended to handle additional invoice types.
 
-## 📂 Folder Structure
+## Project Structure
 
 ```
 Invoice-Data-Extraction/
-├── Input/        # Contains 4 sample invoice PDFs (2 Amazon, 2 Flipkart)
-├── Output/       # Contains the extracted Excel file with structured data
-└── Coding/       # Contains the Python script used for extraction
+├── Input/        # Sample invoice PDFs (2 Amazon, 2 Flipkart)
+├── Output/       # Generated Excel files with extracted data
+└── Coding/       # Python extraction script
 ```
 
----
+## Getting Started
 
-## ⚙️ Instructions
+### Prerequisites
 
-1. 📥 **Add PDFs**
-   Place the invoice PDFs inside the `Input/` folder.
-
-2. 🖥️ **Run the Script**
-   Execute `invoice_extraction.py` located in the `Coding/` folder.
-
-3. 📊 **Get the Output**
-   The structured Excel file will be generated in the `Output/` folder.
-
----
-
-## 🧰 Libraries Used
-
-* `pandas` – for data handling and Excel export
-* `pymupdf (fitz)` – for PDF parsing
-* `openpyxl` – for writing Excel files
-
-*Install them using:*
+Install the required Python packages:
 
 ```bash
 pip install pandas pymupdf openpyxl
 ```
 
----
+### Usage
 
-## 💼 Professional Notes
+1. **Input Preparation**
+   - Place your invoice PDF files in the `Input/` directory
 
-* ✅ All data is **programmatically extracted** from PDF invoices — no manual intervention.
-* 🧾 Each invoice includes buyer name as **"Mayank Arya"** for reference.
-* 🧱 The code is modular, clean, and **ready to scale** to multiple or dynamic file inputs.
-* 📁 Folder structure ensures clarity and easy reproducibility.
+2. **Execution**
+   - Run the extraction script:
+     ```bash
+     python Coding/invoice_extraction.py
+     ```
 
----
+3. **Output**
+   - The structured data will be saved as an Excel file in the `Output/` directory
 
-## 🙏 Thank You!
+## Technical Details
 
-For any suggestions or collaboration ideas, feel free to connect.
-Happy Automating! 🚀
+### Dependencies
 
+- **pandas**: Data manipulation and Excel file generation
+- **pymupdf (fitz)**: PDF text extraction and parsing
+- **openpyxl**: Excel file writing capabilities
+
+### Key Features
+
+- **Automated Processing**: Fully programmatic extraction with no manual intervention required
+- **Modular Design**: Clean, scalable code architecture suitable for extension
+- **Multi-Vendor Support**: Currently handles Amazon and Flipkart invoice formats
+- **Structured Output**: Exports data in organized Excel format for easy analysis
+
+## Sample Data
+
+The project includes sample invoices with buyer information listed as "Mayank Arya" for demonstration purposes.
+
+## Contributing
+
+This project is designed with extensibility in mind. The modular structure allows for easy addition of new invoice formats and processing rules.
+
+## Contact
+
+For questions, suggestions, or collaboration opportunities, please feel free to reach out.
